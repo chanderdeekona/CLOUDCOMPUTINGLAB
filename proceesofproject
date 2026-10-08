@@ -1,0 +1,21 @@
+        AWS S3 Bucket
+             ↓
+      AWS Lambda Auditor
+             ↓
+     Check Bucket Security
+             ↓
+    Is S3 Bucket Public?
+        ↙           ↘
+      YES            NO
+       ↓              ↓
+ Security Alert    Secure Status
+       ↓              ↓
+ DynamoDB          DynamoDB
+       ↓              ↓
+ AWS IoT Core      LED OFF
+       ↓
+ Red LED BLINKS 🔴
+       ↓
+ Frontend Dashboard
+       ↓
+ "PUBLIC BUCKET DETECTED"
